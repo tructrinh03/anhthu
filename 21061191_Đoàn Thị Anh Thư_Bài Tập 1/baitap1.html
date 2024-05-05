@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="1.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Anh Thư</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Về tôi</a></li>
+          <li><a href="#experience">Sở thích</a></li>
+          <li><a href="#projects">Quê quán</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Anh Thư</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Về tôi</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Sở thích</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Quê quán</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Liên hệ</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="/hình/at25.jpg" alt="anhthu" />
+      </div>
+      
+      <div class="section__text">
+        <p class="section__text__p1">Chào mọi người, tôi là </p>
+        <h1 class="title">Đoàn Thị Anh Thư</h1>
+        <p class="section__text__p2">Sinh viên ngành Thương mại điện tử</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            My self
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="/hình/icon email.png"
+            alt="My Facebook profile"
+            class="icon"
+            onclick="location.href='https://www.facebook.com/profile.php?id=100024752322314'"
+          />
+          <img
+            src="/hình/icon fb.png"
+            alt="My Instagram profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Thêm thông tin </p>
+      <h1 class="title">Về tôi</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="/hình/at13.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="/hình/icon sở thích.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3> Đoàn Thị Anh Thư </h3>
+              <p>Sinh ngày: 19/11/2003 <br />Cung hoàng đạo: Thiên Yết</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="/hình/icon học vấn.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Học vấn</h3>
+              <p>Sinh viên năm 3<br />Đại học Công Nghiệp TP.HCM</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Mình xin giới thiệu về bản thân một chút nhé!
+                Mình tên là Đoàn Thị Anh Thư.
+                Sinh ngày 19/11/2003
+                Hiện tại đang là sinh viên năm 3 của trường Đại học Công Nghiệp Thành phố Hồ Chí Minh nè.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/hình/arrow icon.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Khám phá thêm</p>
+      <h1 class="title">Sở thích</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Làm đồ handmade</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="/hình/Khung-san-pham-moi-1S.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Hoa</h3>
+                  <p>Kẽm nhung</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/hình/images (1).jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Hoa</h3>
+                  <p>Len</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/hình/images (1).jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Trang trí</h3>
+                  <p>Kẽm nhung</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/hình/d2a69b3e0aebda179ac4710d07d322c9.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Trang trí</h3>
+                  <p>Len</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/hình/vn-11134207-7r98o-lmlu6ys326zj7c.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Móc khóa</h3>
+                  <p>Kẽm nhung</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/hình/cafe6cf6a128ce2f88074144bd0fbafa.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Móc khóa</h3>
+                  <p>Len</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Giải trí</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="/hình/icon nghe nhạc.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Nghe nhạc</h3>
+                  <p>K-pop</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/hình/icon đọc sách.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Đọc sách </h3>
+                  <p>Khám phá</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/hình/icon chụp hình.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Chụp hình</h3>
+                  <p>My self</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/hình/icon xem phim.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Xem phim</h3>
+                  <p>Korea</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/hình/arrow icon.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Quê tôi</p>
+      <h1 class="title">Tiền Giang</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="/hình/chùa-vĩnh-tràng-1-1024x576.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Chùa Vĩnh Tràng</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://mia.vn/cam-nang-du-lich/ve-dep-thanh-tao-cua-chua-vinh-trang-duoi-nang-gio-phuong-nam-9400'"
+              >
+            View
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://vietnamtourism.gov.vn/post/19152'"
+              >
+                Khám phá
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="/hình/biển gò công.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Biển Gò Công</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://thamhiemmekong.com/thong-tin-du-lich-mien-tay/bien-tan-thanh-bien-go-cong-tien-giang.html'"
+              >
+                View
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.bachhoaxanh.com/kinh-nghiem-hay/kinh-nghiem-du-lich-bien-tan-thanh-go-cong-tien-giang-day-du-1421997'"
+              >
+                Khám phá
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="/hình/avt-con-thoi-son-tien-giang.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Cồn Thới Sơn</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.traveloka.com/vi-vn/explore/tips/kinh-nghiem-du-lich-con-thoi-son/169549'"
+              >
+                View
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://conphung-conthoison.com/?gad_source=1&gclid=Cj0KCQjwudexBhDKARIsAI-GWYWNxmWIHR91ZPW5eHBMSBb5HmVIi1x_01wxxeHk_6lbgyQQpLvYK68aArYtEALw_wcB'"
+              >
+                Khám phá
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/hình/arrow icon.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Hãy liên hệ tôi</p>
+      <h1 class="title">Thông tin</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="/hình/icon ig.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="https://www.instagram.com/">Instagram</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="/hình/icon fb.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.facebook.com/profile.php?id=100024752322314">Facebook</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Về tôi</a></li>
+            <li><a href="#experience">Sở thích</a></li>
+            <li><a href="#projects">Quê quán</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Địa chỉ: 497 Thống Nhất, Gò vấp, TP.HCM</p>
+      <p>Sđt: 0786997462</p>
+      <p>Email: doanthianhthu19/11@gmai.com</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}
+
+
+    </script>
+  </body>
+</html>
